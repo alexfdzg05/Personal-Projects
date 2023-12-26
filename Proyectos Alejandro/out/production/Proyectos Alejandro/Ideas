@@ -1,0 +1,27 @@
+Aquí voy a escribir posibles proyectos:
+1º Un buscador de palabras que indica si la palabra se encuentra en el texto, y cuantas veces se repite
+2º Hacer una calculadora (simplificada con funciones de la clase Math)
+3º Hacer un videojuego de conducir:
+   1º Que te pregunte por los modelos del camión o jugar en default
+   2º Que tenga en cuenta la distancia que hay entre el origen y el destino
+   3º Que tenga en cuenta el sueño: <12 h de trayecto aumenta las posibilidades de tener un accidente
+   4º Que tenga en cuenta el repostaje
+   ----------------------------------------------------------------------------------------------------
+   5º Que si se queda sin combustible tenga que preguntar a alguien, y en base a su apariencia
+      aceptar su ayuda o no (está la posibilidad de que nos roben): Habrá una posibilidad
+      de que nos roben o no.
+   6º Que puedas escoger ruta (corta/larga) con posibilidad de que ocurra algo
+   7º Te pregunte cuantas gasolineras y zonas de descanso hay repartidas por el mapa, o bien ponerlas en default
+   (OPCIONAL)
+   [Este proyecto es extrapolable a un juego de aviones]
+   ----------------------------------------------------------------------------------------------------
+
+4º Esto es para compu/arduino, pero estaría guapo hacer un mecanismo con arduino que al detectar una cierta cantidad
+   de lúmenes(iluminar con una linterna a una señal con P motos), suene la música del hormiguero. Una vez comprobado que funciona
+   habría que pegarlo a la señal de la ETSISI; pedir permiso para ponerlo y que no se imaginen cosas raras: https://youtu.be/Go4v9oRhauk
+5º
+6º
+7º
+8º
+9º
+10º ¿Cacharrear con la librería de java .net?
