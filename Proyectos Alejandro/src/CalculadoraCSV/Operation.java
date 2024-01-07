@@ -21,4 +21,25 @@ public class Operation {
     public static void writeOperation(String file){
 
     }
+    public int solve(){
+        int solution;
+        switch (operator){
+            case '+':
+                case '-':
+                    //Our programm should detect the firstnumber - secondnumber as: - secondnumber (negative second number)
+                    solution = firstNumber + secondNumber;
+                break;
+            case  '/':
+                if (secondNumber != 0) {
+                    solution = firstNumber / secondNumber;
+                } else {
+                    solution = -1;
+                }
+                break;
+            case '*':
+            default:
+                solution = firstNumber * secondNumber;
+        }
+        return solution;
+    }
 }

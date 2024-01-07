@@ -34,10 +34,14 @@ public class ListOperations {
     }
 
     public void removeOperation(int position){
-        for (int i = position; i < operations.length -1; i++){
-            operations[i]=operations[i + 1];
+        if (position > 0 && position < operations.length) {
+            for (int i = position - 1; i < operations.length - 1; i++) {
+                operations[i] = operations[i + 1];
+            }
+            operations[operations.length - 1] = null;
+        } else  {
+            System.out.println("Invalid position");
         }
-        operations[operations.length - 1] = null;
     }
     public void removeOperations(int min, int max){
         if (min > 0 && max < operations.length) {
