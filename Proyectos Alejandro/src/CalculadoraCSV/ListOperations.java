@@ -18,7 +18,8 @@ public class ListOperations {
         }
         return property;
     }
-    public Operation insertOperation(int num1, int num2, char operator){
+    public boolean insertOperation(int num1, int num2, char operator){
+        boolean done = false;
        Operation operation = null;
         if (!full()){
             int i = 0;
@@ -27,8 +28,24 @@ public class ListOperations {
             }
             operation = new Operation(num1,num2,operator);
             operations[i] = operation;
+            done = true;
         }
-        return operation;
+        return done;
     }
 
+    public void removeOperation(int position){
+        for (int i = position; i < operations.length -1; i++){
+            operations[i]=operations[i + 1];
+        }
+        operations[operations.length - 1] = null;
+    }
+    public void removeOperations(int min, int max){
+        if (min > 0 && max < operations.length) {
+            for (int i = min; i < max; i++){
+                operations[i] = null;
+            }
+        }else {
+            System.out.println("Invalid range");
+        }
+    }
 }
