@@ -21,24 +21,25 @@ public class Operation {
     public static void writeOperation(String file){
 
     }
-    public int solve(){
-        int solution;
+    public String solve(){
+        String solution;
         switch (operator){
             case '+':
                 case '-':
                     //Our programm should detect the firstnumber - secondnumber as: - secondnumber (negative second number)
-                    solution = firstNumber + secondNumber;
+                    solution = ""+ firstNumber + secondNumber;
                 break;
             case  '/':
                 if (secondNumber != 0) {
-                    solution = firstNumber / secondNumber;
+
+                    solution = ""+ firstNumber / secondNumber;
                 } else {
-                    solution = -1;
+                    solution = "Invalid division: Divided by zero!";
                 }
                 break;
             case '*':
             default:
-                solution = firstNumber * secondNumber;
+                solution = ""+ firstNumber * secondNumber;
         }
         return solution;
     }
