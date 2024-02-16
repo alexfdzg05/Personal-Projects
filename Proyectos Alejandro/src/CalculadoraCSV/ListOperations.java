@@ -52,4 +52,12 @@ public class ListOperations {
             System.out.println("Invalid range");
         }
     }
+    public void solve(){
+        for (int i = 0; i < operations.length; i++){
+            if (operations[i]!= null){
+                System.out.println(operations[i].solve());
+            }
+        }
+        System.out.println("----Terminado----");
+    }
 }

@@ -14,7 +14,8 @@ public class Calculator {
             switch (option){
                 case 1:
                     // Solve operation
-
+                    Operation operation = Operation.createOperation();
+                    System.out.println("The result is: "+operation.solve());
                     break;
                 case 2:
                     // Solve homework
@@ -32,7 +33,24 @@ public class Calculator {
                     break;
                 case 4:
                     //Strikes
-
+                    boolean finished = false;
+                    System.out.println("Good luck!");
+                    int solution;
+                    int strike = 0;
+                    while (!finished){
+                        Operation operation1 = Operation.RandomOperation();
+                        System.out.print(operation1.toString());
+                        solution = teclado.nextInt();
+                        teclado.nextLine();
+                        System.out.println();
+                        if (operation1.solve() != solution){
+                            finished = true;
+                        }else{
+                            strike++;
+                        }
+                    }
+                    System.out.println("You made it with a "+strike+" strike");
+                    System.out.println("Congrats!");
                     break;
                 case 0:
                     System.out.println("GOOD BYE");
